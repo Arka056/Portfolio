@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arka</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+  <link rel="shortcut icon" href="./images/profile_photo.png" type="image/x-icon">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Arka Kundu</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo"></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="images/Photo4.jpg" alt="Arka Kundu profile picture">
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Arka Kundu</h1>
+      <p class="section_text_p2">Full Stack Java Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./images/Arka_Resume.pdf')"> Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./images/linkedin (1).png" alt="My linkedin profile" class="icon" 
+        onclick="location.href='https://www.linkedin.com/in/arka-kundu-03b2a226b/'">
+        <img src="./images/github (1).png" alt="My github profile" class="icon" 
+        onclick="location.href='https://github.com/Arka056'">
+        <img src="./images/leetcode.png" alt="My leetcode profile" class="icon" 
+        onclick="location.href='https://leetcode.com/u/arka___/'">
+        <i class="fa-brands fa-hackerrank fa-2x icon"  style: onclick="location.href='https://www.hackerrank.com/profile/arka___'"></i>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img src="images/photo.jpg" alt="About picture">
+      </div>
+      <div class="about-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <img src="./images/experience.png" alt="experience icon" class="icon">
+            <h3>Experience</h3>
+            <p>2+ years of <br>
+            Java Full Stack <br>Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./images/education.png" alt="education icon" class="icon">
+            <h3>Education</h3>
+            <p>B.Tech in<br>
+            Computer Science Engineering <br>
+          KIIT University</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Hey there! I'm Arka, hailing from the city of Joy i.e. Kolkata, West Bengal. Currently a Pre-Final Year Student at KIIT, Bhubaneswar, I'm on a mission to craft my path as a stellar software developer. With a knack for problem-solving and a passion for coding, I specialize in Java, wielding its power to build efficient and elegant solutions. Eager to dive deeper into the world of technology, I'm dedicated to honing my skills and embracing the challenges that come my way. Let's connect and code our way to innovation!
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="arrow icon" class="icon arrow"
+    onclick="location.href='./#skills'">
+  </section>
+  <section id="skills">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-details-container">
+      <div class="about-container">
+        <div class="details-container">
+          <h2 class="skills-sub-title">Frontend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>BootStrap</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>Thymeleaf</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="skills-sub-title">Backend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>SpringBoot</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>MySql</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="skills-sub-title">Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>Git / GitHub</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>PostMan</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>Microsoft Azure</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="checkmark icon" class="icon">
+              <div>
+                <h3>SAP DataSphere</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="arrow icon" class="icon arrow"
+    onclick="location.href='./#projects'">
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="skills-details-container">
+      <div class="about-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./images/Product_Management1.png" alt="Product_Management" class="project-img">
+        </div>
+        <h2 class="skills-sub-title project-title">  Product Management</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/Arka056/Product_Management'">View Project</button>'
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./images/onlineBook.jpg" alt="Online Book Management" class="project-img">
+        </div>
+        <h2 class="skills-sub-title project-title">Book Store Management</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/Arka056/Book-Store-Management'">View Project</button>'
+        </div>
+      </div>
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="arrow icon" class="icon arrow"
+    onclick="location.href='./#contact'">
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./images/email (1).png" alt="email icon" class="icon contact-icon">
+        <h3><a href="mailto:arka99325@gmail.com">Email</a></h3>
+      </div>
+      <div class="contact-info-container">
+        <img src="./images/linkedin (1).png" alt="linkedin icon" class="icon contact-icon">
+        <h3><a href="https://www.linkedin.com/in/arka-kundu-03b2a226b/">Linkedin</a></h3>
+      </div>
+      <div class="contact-info-container">
+        <img src="./images/whatsapp.png" alt="whatsapp icon" class="icon contact-icon">
+        <a href="https://wa.me/+919932845443" target="_blank">
+          <h3>Whatsapp</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Arka Kundu. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
